@@ -9,12 +9,12 @@ export class RolesController {
 
   @Post()
   create(@Body() dto: CreateRollDto) {
-    return this.rolesService.createRoll(dto)
+    return this.rolesService.createRoll(dto);
   }
 
   @Get('/:value')
   getByValue(@Param('value') value: string) {
-    return this.rolesService.getRollByValue(value)
+    return this.rolesService.getRollByValue(value);
   }
 
 }
